@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from 'react';
 import { FaHome, FaPhone, FaInfoCircle, FaClipboardList, FaShoppingCart } from 'react-icons/fa';
 import Link from 'next/link';
@@ -8,8 +8,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#C5E1E4] p-5">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="flex items-center justify-between w-full md:w-auto">
           <button className="md:hidden" onClick={() => setShowMenu(!showMenu)}>
             <svg
               className="w-6 h-6"
@@ -27,7 +27,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <ul className={`md:flex items-center gap-7 ${showMenu ? 'block' : 'hidden'}`}>
+        <ul className={`md:flex items-center gap-7 ${showMenu ? 'block mt-4' : 'hidden'} md:mt-0`}>
           <li>
             <Link legacyBehavior href="/" passHref>
               <a className="text-lg md:text-base font-semibold flex items-center p-2 md:p-0">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/sobre-nos" passHref>
+            <Link legacyBehavior href="/SobreNos" passHref>
               <a className="text-lg md:text-base font-semibold flex items-center p-2 md:p-0">
                 <FaInfoCircle className="mr-2" />
                 Sobre Nós
