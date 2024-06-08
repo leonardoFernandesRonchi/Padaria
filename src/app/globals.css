@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 .carousel-item {
-    display: none;
-  }
-  
-  .carousel-item.active {
-    display: block;
-  }
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}

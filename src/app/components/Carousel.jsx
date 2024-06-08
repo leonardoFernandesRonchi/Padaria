@@ -6,18 +6,18 @@ const Carousel = () => {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setCurrentSlide(currentSlide === 4 ? 0 : currentSlide + 1);
+            setCurrentSlide((prevSlide) => (prevSlide === 4 ? 0 : prevSlide + 1));
         }, 5000); // Altere o intervalo conforme necessário
 
         return () => clearInterval(intervalId);
-    }, [currentSlide]);
+    }, []);
 
     const nextSlide = () => {
-        setCurrentSlide(currentSlide === 4 ? 0 : currentSlide + 1);
+        setCurrentSlide((prevSlide) => (prevSlide === 4 ? 0 : prevSlide + 1));
     };
 
     const prevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? 4 : currentSlide - 1);
+        setCurrentSlide((prevSlide) => (prevSlide === 0 ? 4 : prevSlide - 1));
     };
 
     const slideTo = (index) => {
@@ -30,12 +30,12 @@ const Carousel = () => {
             <div className="relative h-[50vh] overflow-hidden md:h-96">
                 {/* Renderizando os itens do carrossel */}
                 {['chocolade.jpg', 'donuts.jpg', 'vecteezy.jpg', 'croissant.jpg', 'paes.jpg'].map((item, index) => (
-                    <div key={index} className={`duration-700 ease-in-out ${index === currentSlide ? '' : 'hidden'}`} data-carousel-item>
+                    <div key={index} className={`carousel-item ${index === currentSlide ? 'active' : ''}`} data-carousel-item>
                         <img
                             src={`/${item}`}
                             className="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt={`Slide ${index + 1}`}
-                            style={{ minWidth: '100%', minHeight: '100%' }} // Estilos para garantir que as imagens ocupem todo o espaço disponível
+                            style={{ minWidth: '100%', minHeight: '100%' }}
                         />
                     </div>
                 ))}
