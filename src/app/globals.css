@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.transition-transform {
-  transition: none;
-}
+.carousel-item {
+    display: none;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }

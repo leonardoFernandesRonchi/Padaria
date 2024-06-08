@@ -1,16 +1,15 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Carousel from "./components/Carousel";
+import SubNavbar from "./components/subNavbar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div>
-        {/* Aqui vai o conteúdo da sua página */}
-        <h1>Bem-vindo à minha página inicial!</h1>
-        <p>Esta é a página inicial do meu site.</p>
-      </div>
+      <SubNavbar text="Pagina Inicial, navegue pelas nossas páginas" />
+      <Carousel />
       <Footer />
-    </>
+        </>
   );
 }
