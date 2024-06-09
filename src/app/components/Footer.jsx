@@ -13,11 +13,11 @@ const Footer = () => {
           </div>
           <div className="flex items-center mb-2">
             <FaMapMarkerAlt className="mr-2" />
-            <span>Endereço fictício</span>
+            <span>1234 Fictional St, Imaginary City, 56789</span>
           </div>
           <div className="flex items-center">
             <FaEnvelope className="mr-2" />
-            <span>email@example.com</span>
+            <span>email@fakemail.com</span>
           </div>
         </div>
         {/* Horário de funcionamento */}
