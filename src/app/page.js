@@ -2,8 +2,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
 import SubNavbar from "./components/SubNavbar";
-import OverFooter from "./components/overFooter";
-
+import OverFooter from "./components/OverFooter";
 export default function Home() {
   return (
     <>

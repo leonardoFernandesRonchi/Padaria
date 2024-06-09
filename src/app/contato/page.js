@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-import OverFooter from "../components/overFooter";
+import OverFooter from '../components/OverFooter';
 import SubNavbar from '../components/SubNavbar';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
