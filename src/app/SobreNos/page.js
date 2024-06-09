@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SubNavbar from "../components/SubNavbar";
 import AboutUs from "../components/AboutUs";
-import OverFooter from "../components/overFooter";
+import OverFooter from "../components/OverFooter";
 export default function sobreNos() {
   return (
     <>
