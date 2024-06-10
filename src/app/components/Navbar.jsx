@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="bg-[#C5E1E4] p-5">
+    <nav className="bg-[#D4B483] p-5">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center justify-between w-full md:w-auto">
           <button className="md:hidden" onClick={() => setShowMenu(!showMenu)}>

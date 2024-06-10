@@ -10,7 +10,7 @@ const MyApp = () => {
     <div>
       <OverFooter/>
       <Navbar />
-      <SubNavbar text="Sobre Nós"/>
+      <SubNavbar text="Contato"/>
       <Contact/>
       <Footer/>
     </div>

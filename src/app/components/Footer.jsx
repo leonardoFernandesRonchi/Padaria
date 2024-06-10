@@ -2,7 +2,7 @@ import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#C5E1E4] p-8">
+    <footer className="bg-[#D4B483] p-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Contato */}
         <div>
