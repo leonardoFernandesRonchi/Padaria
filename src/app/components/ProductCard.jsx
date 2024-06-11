@@ -3,13 +3,14 @@ import Image from 'next/image';
 const ProductCard = ({ product }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white">
-      <div className="w-full h-48 overflow-hidden"> {/* Container with fixed height */}
+      <div className="w-full h-48 overflow-hidden relative"> {/* Container with fixed height */}
         <Image
-          className="object-cover w-full h-full" // Ensure image covers the container
           src={product.imagem}
           alt={product.nome}
+          layout="responsive"
           width={500} // Original dimensions
           height={200} // Original dimensions
+          sizes="100vw"
         />
       </div>
       <div className="px-6 py-4">
@@ -26,3 +27,4 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+

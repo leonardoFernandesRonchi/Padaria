@@ -51,9 +51,9 @@ const products = [
     },
     {
         "id": 8,
-        "nome": "Sonho de Creme",
+        "nome": "Rosquinha (Unidade)",
         "valor": 6.00,
-        "imagem": "/sonho.jpg"
+        "imagem": "/donuts2.jpg"
     },
     {
         "id": 10,
@@ -75,11 +75,13 @@ export default function Encomendas() {
         <SubNavbar text="Encomendas" />
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center my-8">Produtos da Padaria</h1>
-          <div className="flex flex-wrap justify-center">
-            {products.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <div className="container mx-auto px-4 flex flex-wrap justify-center align-content-start">
+  {products.map(product => (
+    <ProductCard key={product.id} product={product} />
+  ))}
+</div>
+
+
         </div>
         <Footer />
       </>

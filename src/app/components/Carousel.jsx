@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from 'react';
 
 const Carousel = () => {
@@ -27,7 +27,7 @@ const Carousel = () => {
     return (
         <div id="default-carousel" className="relative w-full" data-carousel="slide">
             {/* Carousel wrapper */}
-            <div className="relative h-[50vh] overflow-hidden md:h-96">
+            <div className="relative h-[80vh] overflow-hidden md:h-[75vh]">
                 {/* Renderizando os itens do carrossel */}
                 {['chocolade.jpg', 'donuts.jpg', 'vecteezy.jpg', 'croissant.jpg', 'paes.jpg'].map((item, index) => (
                     <div key={index} className={`carousel-item ${index === currentSlide ? 'active' : ''}`} data-carousel-item>
