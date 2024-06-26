@@ -5,8 +5,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useCart } from '../context/CartContext';
-import Navbar from '../components/navbar';  // Importe sua navbar aqui
-import Subnavbar from '../components/subnavbar';  // Importe sua subnavbar aqui
+import Navbar from '../components/Navbar';
+import SubNavbar from '../components/SubNavbar';
 import Footer from '../components/Footer';  // Importe seu componente Footer aqui
 
 const CartPage = () => {
@@ -19,7 +19,7 @@ const CartPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar /> {/* Renderiza a navbar */}
-      <Subnavbar text="Carrinho" /> {/* Renderiza a subnavbar */}
+      <SubNavbar text="Carrinho" /> {/* Renderiza a subnavbar */}
       <div className="flex-1">
         <h1 className="text-4xl font-bold text-center my-8">Carrinho</h1>
         {cart.length === 0 ? (
