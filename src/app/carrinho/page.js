@@ -8,6 +8,7 @@ import { useCart } from '../context/CartContext';
 import Navbar from '../components/Navbar';
 import SubNavbar from '../components/SubNavbar';
 import Footer from '../components/Footer';  // Importe seu componente Footer aqui
+import OverFooter from '../components/OverFooter';
 
 const CartPage = () => {
   const { cart, removeFromCart } = useCart();
@@ -18,6 +19,7 @@ const CartPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <OverFooter />
       <Navbar /> {/* Renderiza a navbar */}
       <SubNavbar text="Carrinho" /> {/* Renderiza a subnavbar */}
       <div className="flex-1">
