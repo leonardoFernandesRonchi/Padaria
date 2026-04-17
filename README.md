@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🥖 Padaria
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-Framework-black?logo=next.js)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?logo=tailwind-css)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![License](https://img.shields.io/github/license/leonardoFernandesRonchi/Padaria)
+
+---
+
+## 📌 Visão Geral
+
+O **Padaria** é um projeto web desenvolvido com **Next.js**, com foco em simular uma aplicação de padaria online.
+
+O projeto serve como base para aprendizado de:
+
+* React / Next.js moderno (App Router)
+* TailwindCSS
+* Estruturação de projetos frontend profissionais
+
+---
+
+## 🌐 Deploy
+
+🔗 **Deploy (caso publicado):**
+https://seu-projeto-aqui.vercel.app
+
+> 💡 Recomendado usar Vercel para deploy por integração nativa com Next.js
+
+---
+
+
+
+## 🛠️ Tecnologias Utilizadas
+
+### ⚙️ Core
+
+* Next.js
+* React
+
+### 💻 Linguagem
+
+* JavaScript (ES6+)
+
+### 🎨 Estilização
+
+* TailwindCSS
+* PostCSS
+
+### 📦 Gerenciamento
+
+* NPM
+
+### ⚙️ Configurações
+
+* `next/font` → otimização de fontes
+* `next.config.mjs` → configuração do framework
+* `tailwind.config.js` → customização de estilos
+* `postcss.config.mjs` → pipeline CSS
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+ └── app/            # Páginas (App Router) e componentes
+
+public/              # Arquivos estáticos (imagens, ícones)
+
+package.json         # Dependências e scripts
+
+tailwind.config.js   # Configuração do TailwindCSS
+
+postcss.config.mjs   # Configuração do PostCSS
+
+next.config.mjs      # Configuração do Next.js
+```
+
+---
+
+## 🚀 Instalação e Execução
+
+### 1. Clonar repositório
+
+```bash
+git clone https://github.com/leonardoFernandesRonchi/Padaria.git
+cd Padaria
+```
+
+### 2. Instalar dependências
+
+```bash
+npm install
+```
+
+### 3. Rodar servidor de desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Acessar no navegador
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 📑 Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+* 🏠 Página inicial configurada em `src/app/page.js`
+* 🎨 Estilização responsiva com TailwindCSS
+* ⚡ Estrutura moderna com App Router (Next.js)
+* 📄 Base pronta para criação de novas páginas
+* 🔗 Suporte a rotas dinâmicas
+* ☁️ Deploy simplificado com Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📖 Recursos de Aprendizado
 
-## Deploy on Vercel
+* Documentação oficial do Next.js
+* Tutorial interativo do Next.js
+* Documentação do TailwindCSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🧪 Scripts Disponíveis
+
+```bash
+npm run dev     # Inicia servidor de desenvolvimento
+npm run build   # Gera build de produção
+npm start       # Executa versão de produção
+```
+
+---
+
+## 📈 Melhorias Futuras
+
+* 🛒 Sistema de carrinho de compras
+* 💳 Integração com pagamentos
+* 👤 Autenticação de usuários
+* 📊 Dashboard administrativo
+* 📱 Melhor responsividade mobile
+* 🌐 Integração com API backend
+
+## 👨‍💻 Autor
+
+**Leonardo Fernandes**
+🔗 https://github.com/leonardoFernandesRonchi
